@@ -15,7 +15,7 @@ Tukaj je nekaj projektov, na katerih sem delal/a in so mi še posebej pri srcu:
 ## Spotify
 
 En banger spotify playlist (made by ur's truly)
-https://open.spotify.com/playlist/4K9WiIzp6HKz8nnXyTcnHw?si=9a66115417ad4aba
+ - https://open.spotify.com/playlist/4K9WiIzp6HKz8nnXyTcnHw?si=9a66115417ad4aba
 
 
 
