@@ -4,9 +4,9 @@ Ojla! Jaz sem Aljaž ali Megu in to je moj kotiček na internetu. Ustvaril sem g
 
 ## Kdo sploh sem?
 
-No, sem nekdo, ki obožuje gaming, random coding, sraufanje random računalnikov, konfiguracije strežnikov itd. Ko ne kodiram ali ne eksperimentiram z novimi tehnologijami, me najverjetneje najdeš na LoL-u(vem žalostno).
+No, sem nekdo, ki obožuje gaming, random coding, šraufanje random računalnikov, konfiguracije strežnikov itd. Ko ne kodiram ali ne eksperimentiram z novimi tehnologijami, me najverjetneje najdeš na LoL-u(vem žalostno).
 
-## Moji eksperimenti
+## Moji projekti
 
 Tukaj je nekaj projektov, na katerih sem delal/a in so mi še posebej pri srcu:
 
