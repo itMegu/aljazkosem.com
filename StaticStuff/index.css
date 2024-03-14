@@ -29,7 +29,7 @@ body, html {
 
 .dark-mode {
     --background: var(--background-dark);
-    --text-color: var(--text-dark);
+    --text-color: var(--text-dark); 
     --border-color: var(--border-dark);
 }
 
