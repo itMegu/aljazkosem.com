@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     themeToggleButton.addEventListener('click', function () {
         // Toggle the theme
         var newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        document.body.setAttribute('data-theme', newTheme);
+        document.body.setAttribute('data-theme', newTheme); 
 
         // Save the new theme to localStorage
         localStorage.setItem('theme', newTheme);
