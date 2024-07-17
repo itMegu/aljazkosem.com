@@ -6,12 +6,18 @@
 }
 
 body[data-theme="light"] {
+    --background-color: rgba(248, 248, 248, 0.8);
+    --text-color: #333;
+    --blur-filter: blur(10px);
     background-color: var(--background-light);
     color: var(--text-light);
     transition: background-color 1s ease, color 1s ease;
 }
 
 body[data-theme="dark"] {
+    --background-color: rgba(51, 51, 51, 0.8);
+    --text-color: #f8f8f8;
+    --blur-filter: blur(10px);
     background-color: var(--background-dark);
     color: var(--text-dark);
     transition: background-color 1s ease, color 1s ease;
@@ -38,13 +44,13 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(51, 51, 51, 0.5); /* Fixed color values */
+    background-color: var(--background-color);
     color: var(--text-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: var(--blur-filter);
+    -webkit-backdrop-filter: var(--blur-filter);
     transition: background-color 1s ease, color 1s ease;
 }
 
@@ -57,14 +63,21 @@ body, html {
 
 .navbar-links {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, background-color 1s ease;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    overflow: hidden;
+    background: none; /* No background for dropdown menu */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    min-width: 200px; /* Minimum width to prevent overlap */
 }
 
 .navbar-links a {
     text-decoration: none;
     color: var(--text-color);
     margin: 0 10px;
+    padding: 10px 0;
     transition: color 1s ease;
 }
 
@@ -135,35 +148,62 @@ body, html {
     color: var(--background);
 }
 
+/* Dropdown menu animation */
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 500px; /* Adjust based on content */
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        max-height: 500px; /* Adjust based on content */
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .navbar-links {
-        position: absolute;
-        top: 50px; /* Adjust based on the height of your navbar */
-        right: 0;
-        left: 0;
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        background-color: rgba(51, 51, 51, 0.5); /* Fixed color values */
+        position: absolute;
+        top: 60px; /* Adjust based on the height of your navbar */
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background: none; /* No background for dropdown menu */
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        padding-top: 10px; /* Adding padding to avoid overlap */
         max-height: 0;
         opacity: 0;
-        pointer-events: none;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-    }
-
-    .navbar-links a {
-        padding: 10px;
-        margin: 0;
-        width: 100%;
-        text-align: left;
     }
 
     .navbar-links.show {
-        max-height: 500px; /* Adjust according to the number of menu items */
-        opacity: 1;
-        pointer-events: auto;
+        display: flex;
+        animation: slideDown 0.5s forwards;
+    }
+
+    .navbar-links.hide {
+        animation: slideUp 0.5s forwards;
+    }
+
+    .navbar-links a {
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .menu-toggle {

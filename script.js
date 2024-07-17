@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var themeToggleButton = document.getElementById('theme-toggle');
     var menuToggleButton = document.getElementById('menu-toggle');
     var navbarLinks = document.getElementById('navbar-links');
+    var circImage = document.querySelector('.circImage');
 
     // Set the initial theme based on localStorage or default to 'dark'
     var currentTheme = localStorage.getItem('theme') || 'dark';
@@ -14,16 +15,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Save the new theme to localStorage
         localStorage.setItem('theme', newTheme);
-
-        // Update the navbar theme
-        updateNavbarTheme(newTheme);
     });
 
     menuToggleButton.addEventListener('click', function () {
         // Toggle the dropdown menu
         if (navbarLinks.classList.contains('show')) {
             navbarLinks.classList.remove('show');
+            navbarLinks.classList.add('hide');
         } else {
+            navbarLinks.classList.remove('hide');
             navbarLinks.classList.add('show');
         }
     });
@@ -39,21 +39,17 @@ document.addEventListener('DOMContentLoaded', function () {
             // Hide the navbar on small screens after clicking a link
             if (window.innerWidth <= 768) {
                 navbarLinks.classList.remove('show');
+                navbarLinks.classList.add('hide');
             }
         });
     });
 
-    // Function to update navbar theme
-    function updateNavbarTheme(theme) {
-        if (theme === 'light') {
-            navbarLinks.style.backgroundColor = 'rgba(248, 248, 248, 0.5)'; /* Light theme background */
-            navbarLinks.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text-light');
-        } else {
-            navbarLinks.style.backgroundColor = 'rgba(51, 51, 51, 0.5)'; /* Dark theme background */
-            navbarLinks.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text-dark');
+    // Close the dropdown menu if it goes below the picture
+    window.addEventListener('scroll', function () {
+        var rect = circImage.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            navbarLinks.classList.remove('show');
+            navbarLinks.classList.add('hide');
         }
-    }
-
-    // Initialize the navbar theme
-    updateNavbarTheme(currentTheme);
+    });
 });
