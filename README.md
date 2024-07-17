@@ -1,6 +1,6 @@
 # Hej, dobrodošli na moji strani! 
 
-Ojla! Jaz sem Aljaž ali Megu in to je moj kotiček na internetu. Ustvaril sem ga, da lahko delim vse, od mojih projektov do zanimivih blog postov in morda kakšne meme.
+Ojla! Jaz sem Aljaž ali Megu in to je moj sitena internetu. Ustvaril sem ga, da lahko delim vse, od mojih projektov do zanimivih blog postov in morda kakšne meme.
 
 ## Kdo sploh sem?
 
