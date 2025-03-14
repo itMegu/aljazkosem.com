@@ -44,12 +44,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Close the dropdown menu if it goes below the picture
-    window.addEventListener('scroll', function () {
-        var rect = circImage.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom >= 0) {
-            navbarLinks.classList.remove('show');
-            navbarLinks.classList.add('hide');
-        }
-    });
 });
