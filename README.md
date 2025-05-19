@@ -1,16 +1,19 @@
 # Hej, dobrodošli na moji strani! 
 
-Ojla! Jaz sem Aljaž ali Megu in to je moj sitena internetu. Ustvaril sem ga, da lahko delim vse, od mojih projektov do zanimivih blog postov in morda kakšne meme.
+Ojla! Jaz sem Aljaž in to je moj site na internetu.
 
 ## Kdo sploh sem?
 
-No, sem nekdo, ki obožuje gaming, random coding, šraufanje random računalnikov, konfiguracije strežnikov itd. Ko ne kodiram ali ne eksperimentiram z novimi tehnologijami, me najverjetneje najdeš na LoL-u(vem žalostno).
+Random poba, ki mal eksperimentira po strežnikih , od šraufanja, random skript, do kr nekej igrackanja z konfigi ... Če ne delam tega al šraufam kej drugega al pa gledam v zrk
+Mal se dajem tudi z random codingam ampak zadnje čase strežniško usmerjen.
 
 ## Moji projekti
+Nekej mojih projektov
 
-Tukaj je nekaj projektov, na katerih sem delal/a in so mi še posebej pri srcu:
-
-- **Tjulenj**: Maturitetna naloga, ki se je spremenila v dokaj resno stvar, ki nažalost ni več odprtokodna. Je app ki dela evidenco časa, hrani evidenco plače (kalkulira vnešene ure in ob koncu meseca dobis vn določeno plačo uslužbenca.), evidenca osebja, assignment plač... itd. Framework je trenutno na Reactu, dela se pa rewrite da bo slo iz Javascripta na Typescript.
+- **Tjulenj**: Maturitetna naloga, ki se je spremenila v dokaj resno stvar(trenutno private delam rewrite in vlečem že celo večnost). Je app ki dela evidenco časa, hrani evidenco plače (kalkulira vnešene ure in ob koncu meseca dobis vn določeno plačo uslužbenca.), evidenca osebja, assignment plač... itd. Framework je trenutno na Reactu, dela se pa rewrite da bo slo iz Javascripta na Typescript.
+- **Systemwatchdog**: En manjsi prometheus projekt za moje server tok da spremljam mal porabo od štroma do network traffica pa take fore
+- **log-cleanser**: Se en manjsi projekt ker so se mi logi zacel prevec nabirat in sedej tole poskrbi da , se te stvari ne dogajajo več
+- **auto-silencer**: Projekt , ki mi vse planned downtime, ki jih naredim na strezniku utisa , da mi ne razgoni telefona od notifikacij ... dont ask , i found that out the hard way
 
 ## Spotify
 
@@ -18,10 +21,9 @@ En banger spotify playlist (made by ur's truly)
  - https://open.spotify.com/playlist/4K9WiIzp6HKz8nnXyTcnHw?si=9a66115417ad4aba
 
 
-
 ## Če me hočeš najdt
 
-Če te zanima več, imaš kakšno vprašanje, ali pa samo hočeš reči "hej", me lahko najdeš tukaj:
+Še hočeš še kej več o podatkov mi piši na mail.... ce vidm pomeni da si poseben/posebna
 
 - Piši mi na: [aljazkosem04@gmail.com](mailto:aljazkosem04@gmail.com)
 
