@@ -11,7 +11,7 @@ Mal se dajem tudi z random codingam ampak zadnje čase strežniško usmerjen.
 Nekej mojih projektov
 
 - **Tjulenj**: Maturitetna naloga, ki se je spremenila v dokaj resno stvar(trenutno private delam rewrite in vlečem že celo večnost). Je app ki dela evidenco časa, hrani evidenco plače (kalkulira vnešene ure in ob koncu meseca dobis vn določeno plačo uslužbenca.), evidenca osebja, assignment plač... itd. Framework je trenutno na Reactu, dela se pa rewrite da bo slo iz Javascripta na Typescript.
-- **Systemwatchdog**: En manjsi prometheus projekt za moje server tok da spremljam mal porabo od štroma do network traffica pa take fore
+- **Systemwatchdog**: En manjsi prometheus projekt za moje serverje tok da spremljam mal porabo od štroma do network traffica pa take fore
 - **log-cleanser**: Se en manjsi projekt ker so se mi logi zacel prevec nabirat in sedej tole poskrbi da , se te stvari ne dogajajo več
 - **auto-silencer**: Projekt , ki mi vse planned downtime, ki jih naredim na strezniku utisa , da mi ne razgoni telefona od notifikacij ... dont ask , i found that out the hard way
 
