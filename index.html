@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Typing Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Name with its own prompt symbol -->
+    <h1 class="name">
+      <span class="prompt-symbol">&gt;</span>
+      <span id="type-name"></span>
+    </h1>
+
+    <div class="console">
+      <div class="console-header">
+        <span class="circle red"></span>
+        <span class="circle yellow"></span>
+        <span class="circle green"></span>
+      </div>
+      <div class="console-body">
+        <div class="line">
+          <span class="cmd">&gt; Aljaz.currentLocation</span>
+          <span class="out">"Slovenia"</span>
+        </div>
+        <div class="line">
+          <span class="cmd">&gt; Aljaz.contactInfo</span>
+          <span class="out">["aljazkosem04@gmail.com"]</span>
+        </div>
+        <div class="line">
+          <span class="cmd">&gt; Aljaz.education</span>
+          <span class="out">"ORGANIZATION AND MANAGEMENT OF INFORMATION SYSTEMS - University of Maribor"</span>
+        </div>
+        <div class="line">
+          <span class="cmd">&gt; Aljaz.skills</span>
+          <span class="out">["bash","python","docker","kubernetes","linux","..."]</span>
+        </div>
+        <div class="line">
+          <span class="cmd">&gt; Aljaz.projects</span>
+          <span class="out">["SysWatchDog","log-cleanser","auto-silencer"]</span>
+        </div>
+        <div class="line prompt">
+          <span class="prompt-symbol">$</span>
+          <span class="cursor"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

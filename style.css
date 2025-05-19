@@ -1,0 +1,133 @@
+/* ── RESET & BASE ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  background: #f3f7fa;
+  font-family: 'Fira Code', monospace;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* ── NAME (with prompt) ── */
+.name {
+  width: 100vw;
+  max-width: 900px;
+  text-align: left;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 400;
+  color: #4c51bf;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5ch;
+  margin-bottom: 1.5rem;
+}
+.name .prompt-symbol {
+  color: #e06c75;
+  font-weight: 400;
+  font-size: inherit;
+}
+
+/* ── CONSOLE WRAPPER ── */
+.console {
+  width: 100vw;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* ── WINDOW BAR COLORS ── */
+.console-header {
+  background: #e0e0e0;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+}
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.red    { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green  { background: #27c93f; }
+
+/* ── CONSOLE BODY ── */
+.console-body {
+  background: #282c34;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  height: auto;
+  overflow: visible;
+  text-align: left;
+}
+
+/* ── EACH LINE ── */
+.line {
+  /* stack children vertically */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ── COMMAND (blue) ── */
+.cmd {
+  color: #61dafb;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* ── OUTPUT (green, indented) ── */
+.out {
+  color: #98c379;
+  font-size: 1.1rem;
+  margin-left: 2ch;
+  word-break: break-word;
+}
+
+/* ── PROMPT & CURSOR ── */
+.prompt {
+  display: flex;
+  flex-direction: row;       /* lay out $ and cursor side by side */
+  justify-content: flex-start; /* stick them to the left edge */
+  align-items: center;       /* vertical centering of symbol + cursor */
+  margin-top: 1rem;
+}
+.prompt-symbol {
+  color: #e06c75;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-right: 1ch;
+}
+@keyframes blink {
+  0%, 50%   { opacity: 1; }
+  50.1%,100%{ opacity: 0; }
+}
+.cursor {
+  display: inline-block;
+  width: 0.8ch;
+  height: 1.2em;
+  background: #abb2bf;
+  animation: blink 1s step-end infinite;
+}
+#type-name .cursor {
+  width: 0.4ch;     /* narrower */
+  height: 0.8em;    /* a bit shorter */
+  margin-left: 0.3ch;
+}
