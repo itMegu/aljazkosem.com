@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Admin Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">SysAdmin</div>
+        </div>
+        <div class="sidebar-nav">
+            <div class="nav-item active">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-server"></i>
+                <span>Servers</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>Users</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Analytics</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Dashboard</h1>
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/40" alt="User">
+                <span>Admin User</span>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <div class="stat-icon primary">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>24</h3>
+                    <p>Active Servers</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon success">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>142</h3>
+                    <p>Users</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>5</h3>
+                    <p>Warnings</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon danger">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>2</h3>
+                    <p>Critical Errors</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Server Status</div>
+                <button class="btn btn-primary">Refresh</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Server</th>
+                        <th>Status</th>
+                        <th>CPU</th>
+                        <th>Memory</th>
+                        <th>Disk</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Server 01</td>
+                        <td>Online</td>
+                        <td>24%</td>
+                        <td>2.1GB / 8GB</td>
+                        <td>120GB / 500GB</td>
+                        <td><button class="btn btn-primary">Manage</button></td>
+                    </tr>
+                    <tr>
+                        <td>Database Server</td>
+                        <td>Online</td>
+                        <td>56%</td>
+                        <td>6.5GB / 16GB</td>
+                        <td>420GB / 1TB</td>
+                        <td><button class="btn btn-primary">Manage</button></td>
+                    </tr>
+                    <tr>
+                        <td>Backup Server</td>
+                        <td>Online</td>
+                        <td>12%</td>
+                        <td>1.8GB / 8GB</td>
+                        <td>1.8TB / 4TB</td>
+                        <td><button class="btn btn-primary">Manage</button></td>
+                    </tr>
+                    <tr>
+                        <td>Dev Server</td>
+                        <td>Maintenance</td>
+                        <td>0%</td>
+                        <td>0GB / 4GB</td>
+                        <td>80GB / 500GB</td>
+                        <td><button class="btn btn-warning">Restart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
