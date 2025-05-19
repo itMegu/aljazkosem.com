@@ -4,8 +4,8 @@ Ojla! Jaz sem Aljaž in to je moj site na internetu.
 
 ## Kdo sploh sem?
 
-Random poba, ki mal eksperimentira po strežnikih , od šraufanja, random skript, do kr nekej igrackanja z konfigi ... Če ne delam tega al šraufam kej drugega al pa gledam v zrk
-\Mal se dajem tudi z random codingam ampak zadnje čase strežniško usmerjen.
+Random poba, ki mal eksperimentira po strežnikih , od šraufanja, random skript, do kr nekej igrackanja z konfigi ... Če ne delam tega al šraufam kej drugega al pa gledam v zrk     
+Mal se dajem tudi z random codingam ampak zadnje čase strežniško usmerjen.
 
 ## Moji projekti
 Nekej mojih projektov
